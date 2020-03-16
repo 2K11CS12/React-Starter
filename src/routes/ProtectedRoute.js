@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Redirect } from "react-router-dom";
-import { Auth } from '../services';
+import { Auth } from '../core/services';
 
 const ProtectedRoute = ({ component: Component, ...rest }) => {
     let loginPath = '/login';

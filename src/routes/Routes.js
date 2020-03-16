@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
-import { Auth } from "../services";
+import { Auth } from "../core/services";
 
 const Routes = () => {
   let signOutHandle = currentHistory => {
