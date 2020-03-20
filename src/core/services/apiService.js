@@ -1,6 +1,5 @@
-import { Auth } from ".";
-
-import { helpers } from ".";
+import { helpers } from "../utils";
+export { default as Auth } from './authService';
 
 export default {
   get(url) {

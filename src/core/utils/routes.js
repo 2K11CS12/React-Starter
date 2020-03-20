@@ -1,16 +1,16 @@
 
 export const routes = {
-    news: {
-        exactly: true,
-        protected: false,
-        pattern: '/',
-        label: 'About React Lego',
-        component: Homepage
-    },
-    vulnerabilty: {
-        pattern: '/game',
-        label: 'Star Wars Trivia',
-        component: Game,
-        protected: true,
-    }
+    // login: {
+    //     exactly: true,
+    //     protected: false,
+    //     pattern: '/login',
+    //     label: 'Login',
+    //     component: Login
+    // },
+    // register: {
+    //     pattern: '/register',
+    //     label: 'Register',
+    //     component: Register,
+    //     protected: false,
+    // }
 };

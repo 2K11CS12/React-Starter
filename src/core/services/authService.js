@@ -1,20 +1,18 @@
-import jwtDecode from "jwt-decode";
-
-import { helpers } from ".";
+import { helpers } from "../utils";
 
 export default {
   saveToken(token) {
-    localStorage.setItem("BrandsWebJWT", token);
+    localStorage.setItem("rAuthToken", token);
   },
   removeToken() {
-    localStorage.removeItem("BrandsWebJWT");
+    localStorage.removeItem("rAuthToken");
   },
   getToken() {
-    return localStorage.getItem("BrandsWebJWT");
+    return localStorage.getItem("rAuthToken");
   },
   getDecodedToken() {
     let token = this.getToken();
-    let decoded = jwtDecode(token);
+    let decoded = token;
     return decoded;
   },
   isTokenExpired() {
